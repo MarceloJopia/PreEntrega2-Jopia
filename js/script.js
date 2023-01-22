@@ -55,8 +55,8 @@ while (productoSeleccionado===null){
         let filtro = ""
         filtro = prompt(`Escribe el numero de la categoria que deseas\n\n1: Juegos de PC\n2: Juegos de Nintendo\n3: Juegos de Play\n4: Juegos de XBOX\n5: Juegos de Mesa\n6: Consolas\n7: Accesorios`)
         // FILTRAR PRODUCTO
-        const filtrado = productos.filter(funcion(filtro))
-        console.log(filtrado)
+        // const filtrado = productos.filter(funcionFiltro(filtro))
+        // console.log(filtrado)
     }
     else if (idProducto === `SALIR`){
         SALIR=true
@@ -70,26 +70,20 @@ while (productoSeleccionado===null){
     }
 }
 
+// function funcionFiltro(respuestaUsuario){
+//         respuestaUsuario==productos.categoria
+//         console.log ("la respuesta fue "+respuestaUsuario+" y los productos fueron "+productos.categoria)
+// }
 
-function funcion(filtro){
-    for(let producto of productos){
-    filtro==producto.categoria
-    }
-}
-
-
-
-
-
-function listaFiltrada(eleccion){
-    let listaConFiltro = null
-    for (let producto of productos){
-        if (eleccion == producto.categoria){
-            let productoListado = `${producto.id}: ${producto.nombre} (${producto.valor} CLP)`
-            listaConFiltro = listaConFiltro+"\n"+productoListado
-        }
-    }
-}
+// function listaFiltrada(eleccion){
+//     let listaConFiltro = null
+//     for (let producto of productos){
+//         if (eleccion == producto.categoria){
+//             let productoListado = `${producto.id}: ${producto.nombre} (${producto.valor} CLP)`
+//             listaConFiltro = listaConFiltro+"\n"+productoListado
+//         }
+//     }
+// }
 
 // 3 y 4 y 5
 let comprarProducto = pedirStock(productoSeleccionado)
