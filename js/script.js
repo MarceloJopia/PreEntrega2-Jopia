@@ -1,10 +1,11 @@
 // ESTRUCTURA HTML (LISTO)
 // Variables Necesarias (LISTO)
 // Funciones y funciones de orden superior si se puede (--)
-// Crear Objetos en JS (X)
+// Crear Objetos en JS (LSITO)
 // Crear Arrays (LISTO)
 // Metodos de BUSQUEDA y FILTRADO sobre el Array (LISTO)
 let SALIR = false;
+const persona = {}
 const productos = [
     {nombre: "Nintendo Switch", valor: 300000, stock: 17, id: "1", categoria:["2"||"6"]},
     {nombre: "Playstation 5", valor: 800000, stock: 15 , id: "2", categoria:["3"||"6"]},
